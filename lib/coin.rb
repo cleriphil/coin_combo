@@ -9,10 +9,13 @@ class Fixnum
     if amount.>=(25)
       amount = amount.-(25)
       quarter = quarter.+(1)
+    elsif amount.>=(10)
+      amount = amount.-(10)
+      dime = dime.+(1)
     else
       break
     end
     end
-    quarter
+    "You have #{quarter} quarters and #{dime} dimes!"
   end
   end
