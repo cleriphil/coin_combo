@@ -1,13 +1,18 @@
 class Fixnum
   define_method(:coin) do
   amount = self
-  q = 25
-  d = 10
-  coin_totals = Array.new()
-  num_of_coins = amount./(q)
-  coin_totals.push(num_of_coins)
-  remainder = amount.%(q)
-  num_of_coins = remainder./(d)
-  coin_totals.push(num_of_coins)
+  quarter = 0
+  dime = 0
+  nickel = 0
+  pennies = 0
+  until amount.==(0)
+    if amount.>=(25)
+      amount = amount.-(25)
+      quarter = quarter.+(1)
+    else
+      break
+    end
+    end
+    quarter
   end
-end
+  end
