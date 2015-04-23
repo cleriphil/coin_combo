@@ -20,6 +20,6 @@ class Fixnum
      pennies = pennies.+(1)
     end
     end
-    "You have #{quarter} quarters and #{dime} dimes and #{nickel} nickels and #{pennies} pennies!"
+    "You have #{quarter} quarters, #{dime} dimes, #{nickel} nickels and #{pennies} pennies!"
   end
 end
