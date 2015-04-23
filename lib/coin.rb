@@ -12,10 +12,14 @@ class Fixnum
     elsif amount.>=(10)
       amount = amount.-(10)
       dime = dime.+(1)
+    elsif amount.>=(5)
+      amount = amount.-(5)
+      nickel = nickel.+(1)
     else
-      break
+      amount = amount.-(1)
+     pennies = pennies.+(1)
     end
     end
-    "You have #{quarter} quarters and #{dime} dimes!"
+    "You have #{quarter} quarters and #{dime} dimes and #{nickel} nickels and #{pennies} pennies!"
   end
-  end
+end
